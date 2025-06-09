@@ -6,7 +6,7 @@ import Feedback from './pages/Feedback';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ot-chatbot">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
