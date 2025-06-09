@@ -33,6 +33,9 @@ jobs:
         env:
           VITE_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
+      - name: Verify dist contents
+        run: ls -la dist/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
